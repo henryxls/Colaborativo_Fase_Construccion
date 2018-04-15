@@ -1,0 +1,326 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+@font-face{
+
+	font-family: Bauhaus_Demi;
+	src: url("../fonts/Bauhaus_Demi.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body{
+	font-family: Bauhaus_Demi;
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+header{
+	font-family: Bauhaus_Demi;
+	background: #004669;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+	font-size: 20px;
+}
+
+footer{
+	background: #004669;
+	border-radius: 0.5em;
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0.25em;
+	text-align: center;
+	font-size: 0.8em;
+}
+
+
+section#contenedor{
+	margin: 0.5em auto;
+	max-width: 960px;
+	padding: 0;
+	text-align: center;
+}
+
+section#principal,aside{
+	background: #E8E8E8;
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 0.2em auto;
+	max-width: 960px;
+	min-height: 400px;
+	vertical-align: top;
+	width: 60%;
+	color: #333;
+	padding: 1em;
+
+}
+
+article{
+	background: #E8E8E8;
+	border-radius: 0.5em;
+	min-height: 360px;
+	padding: 0.25em;
+	margin: 0.5em auto;
+	color: #666;
+}
+
+iframe{
+	border-radius: 0.5em;
+	min-height: 360px;
+	padding: 0.25em;
+	margin: 0.5em auto;
+	width: 95%;
+	
+}
+
+aside{
+	background: #004669;
+	width: 30%;
+	font-size: 1em;
+	color: #ffffff;
+}
+
+h2{
+	font-size: 1.5em;
+}
+
+strong#negrita{
+	font-size: 1em;
+}
+
+p{
+	text-align: justify;
+	font-size: 1em;
+}
+
+p#p-titulo1{
+	text-align: justify;
+	font-size: 1em;
+}
+
+/* barras de menu */
+
+nav {
+	width: auto;
+	height: 60px;
+	background: #004669;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+}
+
+nav ul li a {
+	display: block;
+	padding: 19px 50px;
+	color: #fff;
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background: #e7b200;
+	color: #333;
+}
+
+nav ul ul{
+	visibility: hidden;
+	position: absolute;
+	top: 190px;
+	display: block;
+	background: #e7b200;
+	transform: translateX(30%);
+	opacity: 0;
+	transition: all 1s
+}
+
+nav ul li a span{
+	transition: all .6s
+}
+
+nav ul li a:hover span{
+	transform: translateY(10px);
+	opacity: 0;
+}
+
+nav ul li:hover ul{
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+header {
+	width: auto;
+	height: 110px;
+	background: #004669;
+	display: flex;
+}
+
+header ul {
+	display: flex;
+	list-style: none;
+}
+
+header ul li a {
+	display: block;
+	padding: 20px 90px;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+header ul li.headertext a {
+	display: block;
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;
+	
+}
+
+
+header ul li.headerlogo a {
+	display: block;
+	padding: 20px 10px;
+	color: #fff;
+	text-decoration: none;
+	justify-content: flex-end;
+}*/
+
+/*fin barras de menu */
+
+/* imagenes */
+
+.dropshadow {
+	float:left;
+	clear:left;
+	background: url(imagenes/shadowAlpha.png) no-repeat bottom right !important;
+	background: url(imagenes/shadow.gif) no-repeat bottom right;
+	margin: 10px 0 10px 10px !important;
+	margin: 10px 0 10px 5px;
+	padding: 0.25px;
+}
+
+.innerbox {
+
+	bottom:6px;
+	right: 6px;
+	margin: 0px 0px 0px 0px;
+}
+
+/* fin imagenes */
+
+/* Estilo de la sopa de letras */
+
+#juego {
+	border-radius: 0.5em;
+	min-height: 360px;
+	padding: 0.25em;
+	margin: 0.5em auto;
+	width: 95%;
+}
+
+#juego div {
+
+	background: #005883;
+ 	width: 100%;
+  	margin: 0 auto;
+}
+
+
+#juego .puzzleSquare {
+
+	font-family: Bauhaus_Demi;
+	color: #FFFFFF;
+  	height: 30px;
+  	width: 30px;
+  	text-transform: uppercase;
+ 	background-color: #005883;
+  	border: 0;
+  
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+
+#juego .selected {
+  background-color: orange;
+}
+
+
+#juego .found {
+  background-color: red;
+  color: white;
+}
+
+#juego .solved {
+  background-color: purple;
+  color: white;
+}
+
+
+#juego .complete {
+  background-color: green;
+}
+
+/* Estilo de las letras a buscar */
+
+#contenedor{
+
+	border-radius: 0.5em;
+	min-height: 360px;
+	padding: 0.25em;
+	margin: 0.5em auto;
+	width: 95%;
+ 
+}
+#Palabras {
+	
+	
+	padding-top: 0px;
+  	-moz-column-count: 1;
+  	-moz-column-gap: 20px;
+  	-webkit-column-count: 1;
+ 	 -webkit-column-gap: 10px;
+ 	 column-count: 1;
+  	column-gap: 20px;
+  	width: 40%px;
+}
+
+#Palabras ul {
+  list-style-type: none;
+}
+
+#Palabras li {
+  padding: 3px 0;
+  font-family: Bauhaus_Demi;
+  color: #000000;
+}
+
+
+#Palabras .wordFound {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Estilo del botón resolver */
+#solve {
+
+	font-size: 120%;
+  margin: 0 20px;
+}
+
+/* Estilo del botón recargar */
+#renew{
+
+	font-size: 120%;
+  	margin: 0 20px;
+}
